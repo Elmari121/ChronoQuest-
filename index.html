@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>World Clock</title>
+  <link rel="stylesheet" href="styles.css">
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.34/moment-timezone-with-data.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>World Clock</h1>
+    <label for="location-select">Select Location:</label>
+    <select id="location-select">
+      <option value="South Africa">South Africa</option>
+      <option value="New York">New York</option>
+      <option value="Tokyo">Tokyo</option>
+    </select>
+    
+    <div id="time-display">
+      <p id="current-location">Current Location: </p>
+      <p id="time">Loading...</p>
+    </div>
+    
+    <a id="home-link" href="/" style="display: none;">Back to Homepage</a>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
